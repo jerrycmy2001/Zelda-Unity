@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us">
+
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -7,7 +8,22 @@
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
+
   <body>
+    <div style="margin:20px;">
+      Keyboard Input: <br>
+      + or =: zoom out<br>
+      -: zoom in<br>
+      w: move up<br>
+      s: move down<br>
+      a: move left<br>
+      d: move right<br>
+      x: attack with sword<br>
+      z: attack with alt weapon<br>
+      space: switch between alt weapons<br>
+      1: cheat mode<br>
+      4: switch between original game and custom level<br>
+    </div>
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas" width=688 height=645></canvas>
       <div id="unity-loading-bar">
@@ -47,7 +63,7 @@
         if (type == 'error') div.style = 'background: red; padding: 10px;';
         else {
           if (type == 'warning') div.style = 'background: yellow; padding: 10px;';
-          setTimeout(function() {
+          setTimeout(function () {
             warningBanner.removeChild(div);
             updateBannerVisibility();
           }, 5000);
@@ -116,4 +132,5 @@
       document.body.appendChild(script);
     </script>
   </body>
+
 </html>
